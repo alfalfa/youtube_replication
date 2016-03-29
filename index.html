@@ -18,21 +18,21 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 </div>
 
 <h2>SSIM</h2>
+#TODO: fix warnings?
 <div style="white-space: pre-wrap; font-family:monospace;">
-git clone https://github.com/saundershayes/SSIM.git
-cd SSIM
+https://github.com/alfalfa/SSIM_analysis
+cd SSIM_analysis
 autoreconf -fi
 sudo apt-get install libavutil-dev libavformat-dev libswscale-dev libx264-dev
 ./configure
 make -j
-#TODO: fix warnings in SSIM maybe?
 cd ..
 </div>
 
 <h2>mahimahi-fork</h2>
 <div style="white-space: pre-wrap; font-family:monospace;">
-git clone https://github.com/saundershayes/mahimahi.git
-cd mahimahi
+git clone https://github.com/alfalfa/mahimahi_youtube_record_replay_fork.git
+cd mahimahi_youtube_record_replay_fork
 ./autogen.sh
 ./configure
 make -j
