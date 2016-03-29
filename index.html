@@ -40,6 +40,19 @@ sudo make install
 cd ..
 </div>
 
+<h2>Forked Chromium setup</h2>
+<div style="white-space: pre-wrap; font-family:monospace;">
+mkdir Chromium_Fork
+cd Chromium_Fork
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+cd depot_tools
+export PATH=$PATH:`pwd`
+cd ..
+fetch chromium
+./src/build/install-build-deps.sh
+gclient sync
+cd src
+</div>
 </body>
 
 </html>
